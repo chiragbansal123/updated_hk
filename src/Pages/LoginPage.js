@@ -24,7 +24,7 @@ function LoginPage() {
     // if (isRegister) {
     //   // register block
     //   try {
-    //     const { data } = await axios.post("http://localhost:8000/register", {
+    //     const { data } = await axios.post("https://hk-backend-zeta.vercel.app/register", {
     //       email: email,
     //       password: password,
     //       cnfpassword: cnfpassword,
@@ -39,7 +39,7 @@ function LoginPage() {
     // } else {
     // login block
     try {
-      const { data, token } = await axios.post("http://localhost:8000/signin", {
+      const { data, token } = await axios.post("https://hk-backend-zeta.vercel.app/signin", {
         email: email,
         password: password,
       });
@@ -51,7 +51,7 @@ function LoginPage() {
         })
       );
       // console.log(data, data.token);
-      // const data1 = await axios.post("http://localhost:8000/signin", {
+      // const data1 = await axios.post("https://hk-backend-zeta.vercel.app/signin", {
       //   isLoggedIn: true,
       // });
 
