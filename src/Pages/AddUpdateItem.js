@@ -42,7 +42,7 @@ function AddUpdateItem() {
     var stock = document.getElementById("stock").value;
     var shelf = document.getElementById("shelfNo").value;
 
-    const { data } = await axios.post("http://localhost:8000/createStock", {
+    const { data } = await axios.post("https://hk-backend-zeta.vercel.app/createStock", {
       customer: state.user.id,
       name: name,
       salt: salt,
