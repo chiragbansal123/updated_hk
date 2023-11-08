@@ -63,7 +63,7 @@ function Profile() {
     );
     setThisMonthSales(
       await axios.get(
-        https://hk-backend-zeta.vercel.app/getThisMonthSales/${state.user.worksAt}`
+        `https://hk-backend-zeta.vercel.app/getThisMonthSales/${state.user.worksAt}`
       )
     );
 
