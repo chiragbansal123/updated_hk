@@ -58,18 +58,18 @@ function Profile() {
 
     setTodaySales(
       await axios.get(
-        `http://localhost:8000/getTodaySales/${state.user.worksAt}`
+        `https://hk-backend-zeta.vercel.app/getTodaySales/${state.user.worksAt}`
       )
     );
     setThisMonthSales(
       await axios.get(
-        `http://localhost:8000/getThisMonthSales/${state.user.worksAt}`
+        https://hk-backend-zeta.vercel.app/getThisMonthSales/${state.user.worksAt}`
       )
     );
 
     setTotalSales(
       await axios.get(
-        `http://localhost:8000/getAllInvoice/${state.user.worksAt}`
+        `https://hk-backend-zeta.vercel.app/getAllInvoice/${state.user.worksAt}`
       )
     );
   }
