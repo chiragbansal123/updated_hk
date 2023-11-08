@@ -29,7 +29,7 @@ function Orders() {
     // console.log("gere");
     setInvoices(
       await axios.get(
-        `http://localhost:8000/getAllInvoice/${state.user.worksAt}`
+        `https://hk-backend-zeta.vercel.app/getAllInvoice/${state.user.worksAt}`
       )
     );
     // console.log(invoices);
@@ -38,7 +38,7 @@ function Orders() {
   async function getTodayInvoices(id) {
     setInvoices(
       await axios.get(
-        `http://localhost:8000/getTodaysAllInvoice?businessName=${state.user.worksAt}&date=${id}`
+        `https://hk-backend-zeta.vercel.app/getTodaysAllInvoice?businessName=${state.user.worksAt}&date=${id}`
       )
     );
   }
@@ -46,7 +46,7 @@ function Orders() {
   async function getThisMonthInvoices() {
     setInvoices(
       await axios.get(
-        `http://localhost:8000/getThisMonthInvoice/${state.user.worksAt}`
+        `https://hk-backend-zeta.vercel.app/getThisMonthInvoice/${state.user.worksAt}`
       )
     );
   }
@@ -117,7 +117,7 @@ function Orders() {
     if (startDate <= endDate) {
       setRangeData(
         await axios.get(
-          `http://localhost:8000/getRangeInvoices?start=${startDate}&end=${endDate}&businessName=${state.user.worksAt}`
+          `https://hk-backend-zeta.vercel.app/getRangeInvoices?start=${startDate}&end=${endDate}&businessName=${state.user.worksAt}`
         )
       );
       console.log(rangeData);
@@ -127,7 +127,7 @@ function Orders() {
   async function handleSortAsc() {
     setInvoices(
       await axios.get(
-        `http://localhost:8000/ordersSortAsc/${state.user.worksAt}`
+        `https://hk-backend-zeta.vercel.app/ordersSortAsc/${state.user.worksAt}`
       )
     );
   }
@@ -135,7 +135,7 @@ function Orders() {
   async function handleSortDsc() {
     setInvoices(
       await axios.get(
-        `http://localhost:8000/ordersSortDsc/${state.user.worksAt}`
+        `https://hk-backend-zeta.vercel.app/ordersSortDsc/${state.user.worksAt}`
       )
     );
   }
