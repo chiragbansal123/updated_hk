@@ -109,7 +109,7 @@ function ConfirmationBox({
   async function handleOutOfStock() {
     // e.preventDefault();
     // console.log(currItemData[0]._id);
-    const { data } = await axios.post(`http://localhost:8000/outOfStock/`, {
+    const { data } = await axios.post(`https://hk-backend-zeta.vercel.app/outOfStock/`, {
       id: currItemData[0]._id,
       customer: currItemData[0].customer,
       name: currItemData[0].name,
@@ -199,7 +199,7 @@ function ConfirmationBox({
 
     // console.log(newInvoiceNo);
 
-    const { data } = await axios.post(`http://localhost:8000/createInvoice`, {
+    const { data } = await axios.post(`https://hk-backend-zeta.vercel.app/createInvoice`, {
       // invoiceNo: 100,
       cart: state.cart,
       name: customer_name,
