@@ -12,7 +12,7 @@ function EndCustomers() {
   async function getEndCustomers() {
     setEndCustomers(
       await axios.get(
-        `http://localhost:8000/getEndCustomers/${state.user.worksAt}`
+        `https://hk-backend-zeta.vercel.app/getEndCustomers/${state.user.worksAt}`
       )
     );
     // console.log(endCustomers);
