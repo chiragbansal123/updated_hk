@@ -55,7 +55,7 @@ function HomePage() {
 
   async function getData() {
     try {
-      const data = await axios.get(`https://hk-backend-zeta.vercel.app/getStock/${client}`);
+      const data = await axios.get(`https://hk-backend-umber.vercel.app/getStock/${client}`);
 
       dispatch(
         getProducts({
