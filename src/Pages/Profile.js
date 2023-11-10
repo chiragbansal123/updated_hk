@@ -58,7 +58,7 @@ function Profile() {
 
     setTodaySales(
       await axios.get(
-        `https://hk-backend-umber.vercel.app/getTodaySales/${state.user.worksAt}`
+        `https://hk-backend-f9dollqts-chiragbansal123.vercel.app/getTodaySales/${state.user.worksAt}`
       )
     );
     setThisMonthSales(
